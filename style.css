@@ -52,3 +52,47 @@ input,textarea{padding:10px;border-radius:5px;border:none;background:#18181a;col
 button{padding:10px;background:#6b20c6;border:none;border-radius:5px;color:#fff;cursor:pointer;transition:.3s;}
 button:hover{background:#00d2ff;}
 footer{text-align:center;padding:25px 10px;background:#18181a;color:#888;font-size:.9rem;margin-top:60px;}
+
+.glow-contact-btns {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin: 32px 0 24px 0;
+}
+
+.glow-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 32px;
+  background: linear-gradient(90deg, #6b20c6 0%, #00d2ff 100%);
+  color: #fff;
+  font-size: 1.1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 18px #6b20c6, 0 4px 0 #18181a;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: 
+    background 0.3s,
+    box-shadow 0.3s,
+    transform 0.1s;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.glow-btn:hover, .glow-btn:focus {
+  background: linear-gradient(90deg, #00d2ff 0%, #6b20c6 100%);
+  box-shadow: 0 0 32px #00d2ff, 0 8px 0 #18181a;
+  color: #fff;
+  transform: translateY(2px) scale(1.04);
+}
+
+.glow-btn:active {
+  background: #18181a;
+  color: #00d2ff;
+  box-shadow: 0 0 10px #6b20c6;
+  transform: translateY(6px) scale(0.98);
+}
