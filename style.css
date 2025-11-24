@@ -42,11 +42,44 @@ section{padding:80px 10%;}
 .tier p{font-size:1.3rem;margin-bottom:10px;}
 .tier ul{list-style:none;}
 .tier li{margin:5px 0;}
-.process ol{margin-top:25px;text-align:left;max-width:600px;margin-inline:auto;}
+
+/* --- PRICING & PROCESS FIXES --- */
+.process {
+  margin-top: 40px; /* Add space between pricing grid and process */
+  text-align: center; /* Center the entire process block */
+}
+
+.process h3{
+  margin-bottom: 20px; /* Space below the H3 title */
+}
+
+.process ol{
+  margin-top:25px;
+  text-align:left;
+  max-width:600px;
+  margin-inline:auto;
+  list-style-position: inside; /* Ensures numbers are aligned with text block */
+  padding-left: 0; /* Remove default padding for better centering control */
+}
+
+.process ol li {
+  margin-bottom: 10px;
+}
+/* -------------------------------- */
+
 #slider{position:relative;max-width:650px;margin:40px auto;text-align:center;}
 .slide{display:none;}
 .slide.visible{display:block;}
 .author{margin-top:10px;color:#00d2ff;}
+
+/* --- CONTACT FIXES --- */
+#contact p {
+  text-align: center; /* Center the introductory text */
+  max-width: 600px; /* Restrict width for better readability */
+  margin: 0 auto 30px auto; /* Center the paragraph and add bottom margin */
+}
+/* ----------------------- */
+
 form{max-width:500px;margin:0 auto;display:flex;flex-direction:column;gap:15px;margin-top:20px;}
 input,textarea{padding:10px;border-radius:5px;border:none;background:#18181a;color:#fff;}
 button{padding:10px;background:#6b20c6;border:none;border-radius:5px;color:#fff;cursor:pointer;transition:.3s;}
